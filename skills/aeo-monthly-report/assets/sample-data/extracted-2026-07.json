@@ -1,0 +1,54 @@
+{
+  "month": "2026-07",
+  "date_range": "Jul 1-31, 2026",
+  "country": "United States",
+  "visibility_overview": {
+    "ai_visibility": 34,
+    "mentions": 612,
+    "topics_total": 397,
+    "mentions_by_model": {
+      "All Models": 550,
+      "AI Overview": 251,
+      "Gemini": 128,
+      "AI Mode": 88,
+      "ChatGPT": 83
+    }
+  },
+  "ai_rankings_kpi": {
+    "responses_with_mentions": 1868
+  },
+  "performance_by_model": {
+    "Gemini": {
+      "mentions": 738
+    },
+    "ChatGPT": {
+      "mentions": 652
+    },
+    "Google AI Overview": {
+      "mentions": 478
+    }
+  },
+  "brand_leaderboard": [
+    {
+      "rank": 1,
+      "brand": "Cedar Valley Technical College",
+      "share_of_voice": 0.731
+    }
+  ],
+  "traffic": {
+    "traffic": 1046,
+    "traffic_delta": 0.17,
+    "conversions": 158,
+    "conversions_delta": 0.88,
+    "bounce_rate": 0.28,
+    "bounce_rate_delta": -0.12,
+    "by_model": {
+      "ChatGPT": 983,
+      "Google Gemini": 41,
+      "Perplexity": 14,
+      "Microsoft Copilot": 6,
+      "Claude.ai": 2
+    },
+    "by_host_total": 1046
+  }
+}

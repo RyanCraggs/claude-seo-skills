@@ -1,0 +1,62 @@
+{
+  "_comment": "Edit this file for your site. Everything instance-specific lives here; SKILL.md reads it at run time. Values below are for the fictional example brand Northwind (northwind.example).",
+  "site": {
+    "name": "Northwind",
+    "site_url": "sc-domain:northwind.example",
+    "domain": "northwind.example",
+    "homepage_urls": [
+      "https://www.northwind.example/",
+      "http://www.northwind.example/",
+      "https://northwind.example/",
+      "http://northwind.example/"
+    ],
+    "content_bucket": {
+      "label": "Blog",
+      "filter": {
+        "dimension": "page",
+        "operator": "contains",
+        "expression": "/blog/"
+      },
+      "_note": "The section your content program publishes to. A 'contains' filter also matches locale mirrors (/es/blog/, /fr/blog/, ...)."
+    },
+    "branded_terms": [
+      "northwind",
+      "northwnd",
+      "north wind",
+      "northwind sleep"
+    ],
+    "locales": [
+      "",
+      "es",
+      "fr",
+      "de",
+      "pt"
+    ]
+  },
+  "thresholds": {
+    "data_state": "all",
+    "page_list_row_limit": 150,
+    "sitewide_page_list_row_limit": 25,
+    "query_list_row_limit": 15,
+    "noise_threshold_clicks": 10,
+    "spike_multiple_of_median": 2,
+    "new_page_max_prior_impressions": 5,
+    "new_page_lookback_days": 14,
+    "top_movers_count": 3
+  },
+  "timezone": "America/New_York",
+  "delivery": {
+    "_comment": "Set method to 'chat' to skip Slack. recipient_id is a Slack user ID (DM) or channel ID; look it up with slack_search_users.",
+    "method": "chat",
+    "slack_recipient_id": "UXXXXXXXXXX",
+    "slack_workspace": "your-workspace"
+  },
+  "tool_prefixes": {
+    "_comment": "MCP tool-name prefixes differ per install. Update after connecting the servers. Find them with ToolSearch, e.g. 'get_advanced_search_analytics' or 'slack_send_message'.",
+    "gsc": "mcp__gscServer__",
+    "slack": "mcp__<your-slack-server>__"
+  },
+  "excluded": [
+    "AI-visibility (Gumshoe / Semrush AI) is a monthly source, so it stays out of the weekly report."
+  ]
+}
